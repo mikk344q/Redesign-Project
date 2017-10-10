@@ -1,0 +1,19 @@
+body{
+    background-color:red
+}
+.img {
+
+    margin: 20px;
+}
+
+.column_bottom {
+    display: flex;
+    }
+
+.column_img {
+    flex-basis: 300px;
+    flex-grow: 1;
+    align-self: flex-end;
+}
+
+
