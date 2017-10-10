@@ -38,11 +38,25 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    color: #f3bf65;
+    color: #7c1b1b;
     padding-left: 4px;
     display: block;
 }
 
 header nav a:hover {
-    color: #db5b3b;
+    color: #c19a66;
+}
+
+.logo {
+    padding: 7px;
+    width: 100vw;
+    height: 168vw;
+    background-repeat: no-repeat;
+    background-image: url(img/logo.png);
+    box-sizing: content-box;
+}
+
+
+.logo img {
+    width: 100%;
 }
