@@ -1,0 +1,48 @@
+/*************FONTS START****************/
+
+/*MENU*/
+
+font-family: 'Indie Flower',
+cursive;
+
+/*MENU-MINDRE SKRIFT*/
+
+font-family: 'Raleway',
+sans-serif;
+
+/*NAV*/
+
+font-family: 'Vollkorn',
+serif;
+
+/*BRODTEKST*/
+
+font-family: 'Amiri',
+serif;
+/****************FONTS SLUT************/
+
+/*************HEADER START****************/
+
+header {
+    position: fixed;
+    background: linear-gradient (to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0)100%);
+    width: 100vw;
+    padding: 1em;
+}
+
+header nav {
+    font-family: 'Vollkorn', serif;
+    text-align: right;
+    margin: 0 5vw 0 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #f3bf65;
+    padding-left: 4px;
+    display: block;
+}
+
+header nav a:hover {
+    color: #db5b3b;
+}
