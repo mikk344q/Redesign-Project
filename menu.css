@@ -43,13 +43,21 @@ header nav a:hover {
     color: #c19a66;
 }
 
+.bg_image {
+    width: 100%;
+    height: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(img/beans.png);
+
+}
+
 /*************HEADER SLUT****************/
 
 h3 {
-    font-family:'Vollkorn',
-serif;
+    font-family: 'Vollkorn',
+    serif;
     font-weight: 800;
     font-size: 1.4em;
 }
-
-
