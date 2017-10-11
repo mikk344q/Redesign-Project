@@ -55,12 +55,56 @@ header nav a:hover {
 
 /*************HEADER SLUT****************/
 
+/************FONT STYLE START***********/
+
 h3 {
-    font-family: 'Vollkorn',
-    serif;
-    font-weight: 800;
-    font-size: 1.4em;
+    font-family: 'Indie Flower',
+    cursive;
+    font-weight: bolder;
+    font-size: 2em;
 }
+
+.sectionwrapper p {
+    font-family: 'Indie Flower',
+    cursive;
+    font-size: 1.4em;
+
+}
+
+/************FONT STYLE SLUT***********/
+
+/************INDHOLD START***********/
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.column {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 15px;
+
+}
+
+.column_bottom {
+    align-self: flex-end;
+}
+
+.column_top {}
+
+.column_top img {
+    width: 25%;
+    float: right;
+    height: contain;
+    flex-basis: 200px;
+    flex-grow: 1;
+
+}
+
+/************INDHOLD SLUT***********/
 
 /***************FOOTER START**************/
 
