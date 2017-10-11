@@ -62,8 +62,6 @@ header nav {
 
 }
 
-
-
 header nav a {
     text-decoration: none;
     color: #7c1b1b;
@@ -75,4 +73,13 @@ header nav a {
 
 header nav a:hover {
     color: #c19a66;
+}
+
+.bg_image {
+    width: 100%;
+    height: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(img/coffee%20bean.jpg);
 }
