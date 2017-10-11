@@ -1,13 +1,7 @@
-body {
-    background-color: red
-}
-
 /*************HEADER START****************/
 
 header {
-    /*    position: fixed;*/
     width: 100%;
-    /*    height: 100vw;*/
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
@@ -47,12 +41,23 @@ header nav a:hover {
     color: #c19a66;
 }
 
+.bg_image {
+    width: 100%;
+    height: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(img/beans.png);
+
+}
+
 /*************HEADER SLUT****************/
 
 /*************Video start****************/
+
 h3 {
-    font-family:'Vollkorn',
-serif;
+    font-family: 'Vollkorn',
+    serif;
     font-weight: 800;
     font-size: 1.4em;
 }
@@ -83,3 +88,23 @@ serif;
 }
 
 /*************billeder slut****************/
+
+/***************FOOTER START**************/
+
+.footer {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url(img/coffee-beans.jpg);
+    width: 100%;
+    height: contain;
+    background-repeat: repeat;
+    background-size: contain;
+
+}
+
+
+
+/****************FOOTER SLUT**************/

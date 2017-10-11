@@ -64,15 +64,19 @@ h3 {
 
 /***************FOOTER START**************/
 
-.footer img {
+.footer {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     background-image: url(img/coffee-beans.jpg);
     width: 100%;
     height: contain;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: contain;
-}
 
-.footer {}
+}
 
 
 
