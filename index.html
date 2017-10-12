@@ -68,23 +68,53 @@
 
         <div class="content_bottom">
             <div class="column_map">
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIMOOODMbaHmDiCOkzGvESbfMNiC-QWU0'></script>
+                <div style='overflow:hidden;height:400px;width:505px;'>
+                    <div id='gmap_canvas' style='height:400px;width:505px;'></div>
+                    <style>
+                        #gmap_canvas img {
+                            max-width: none!important;
+                            background: none!important
+                        }
+
+                    </style>
+                </div> <a href='http://maps-generator.com/ro'>maps-generator.com</a>
+                <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=59a18be6a12ca8141f7b8468c78fc0e78b48e427'></script>
+                <script type='text/javascript'>
+                    function init_map() {
+                        var myOptions = {
+                            zoom: 12,
+                            center: new google.maps.LatLng(55.6584093, 12.608001800000011),
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                        marker = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(55.6584093, 12.608001800000011)
+                        });
+                        infowindow = new google.maps.InfoWindow({
+                            content: '<strong>Rust&Kaffen</strong><br>Amagerbrogade 111<br>2300 kobenhavn s<br>'
+                        });
+                        google.maps.event.addListener(marker, 'click', function() {
+                            infowindow.open(map, marker);
+                        });
+                        infowindow.open(map, marker);
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);
+
+                </script>
             </div>
 
         </div>
 
+        <div class="text">
+            <p><b>CVR-nr.: 32904564</b></p>
 
+            <p>Info@rustogkaffen.dk<br> +45 23 20 15 30</p>
+        </div>
 
 
     </div>
-
-    <div class="text">
-        <p><b>CVR-nr.: 32904564</b></p>
-
-        <p>Info@rustogkaffen.dk<br> +45 23 20 15 30</p>
-    </div>
-
-
-
 
     <footer>
         <div class="footer">
