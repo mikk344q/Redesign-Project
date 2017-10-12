@@ -89,9 +89,14 @@ h3 {
     padding: 0 50px 0 50px;
 }
 
+.column_top {
+    justify-content: center;
+}
+
+
 .column_top video {
-    width: 100%!important;
-    height: 100%!important;
+    width: 80%!important;
+    height: 80%!important;
 }
 
 /*************Video slut****************/
