@@ -72,11 +72,10 @@ header nav a:hover {
 /*************Video start****************/
 
 h3 {
-    font-family: 'Vollkorn',
+    font-family: 'Amiri',
     serif;
-    ;
-    font-weight: 800;
-    font-size: 1.4em;
+    font-weight: bolder;
+    font-size: 2em;
 }
 
 .text p {
@@ -91,12 +90,13 @@ h3 {
 
 .column_top {
     justify-content: center;
+    padding-top: 80px;
 }
 
 
 .column_top video {
-    width: 80%!important;
-    height: 80%!important;
+    width: 80vw!important;
+    height: 47vw!important;
 }
 
 /*************Video slut****************/
