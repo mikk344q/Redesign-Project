@@ -1,5 +1,6 @@
 /*************FONTS START****************/
 
+
 /*MENU*/
 
 /*
@@ -26,9 +27,53 @@ serif;
 /*
 font-family: 'Amiri',
 serif;
+<<<<<<< HEAD
+=======
 */
+>>>>>>> origin/master
 
 /****************FONTS SLUT************/
+
+
+/*** * NAV START * ***/
+
+header {
+    position: fixed;
+    /*    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);*/
+    width: 100%;
+    padding: 0;
+}
+
+header nav {
+    font-family: 'russo one', sans-serif;
+    text-align: right;
+    margin: 10px 10px 0 0;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #070706;
+    padding-left: 4px;
+    display: block;
+}
+
+header nav a:hover {
+    color: #747474;
+}
+
+header nav a {
+    display: inline-flex;
+}
+
+@media screen and (max-width: 676px) {
+    header nav a {
+        display: block;
+    }
+}
+
+
+/*** * NAV END * ***/
+
 
 /*************HEADER START****************/
 
