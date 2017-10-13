@@ -1,51 +1,41 @@
-/********** splash ************/
-
-<<<<<<< HEAD
-#splash {
-    width: 100vw;
-    height: 79.7vw;
-    background-image: url(img/splash_3.jpeg);
-    background-size: cover;
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
 
-/*********** splash slut *********/
+/*************FONTS START****************/
 
 
-/********* logo ********/
-
-#splash .logo img {
-    width: 30vw;
-}
-
-
-/********* logo slut ********/
-
-
-/************* menu *************/
-=======
 /*MENU*/
+
 
 /*
 font-family: 'Indie Flower',
 cursive;
 */
 
+
 /*MENU-MINDRE SKRIFT*/
+
 
 /*
 font-family: 'Raleway',
 sans-serif;
 */
 
+
 /*NAV*/
+
 
 /*
 font-family: 'Vollkorn',
 serif;
 */
 
+
 /*BRODTEKST*/
+
 
 /*
 font-family: 'Amiri',
@@ -57,77 +47,85 @@ serif;
 html {
     background: url(img/steam.jpg) no-repeat center;
     background-size: cover;
-
 }
 
 body {
     margin: 0;
 }
 
+
 /*************HEADER START****************/
->>>>>>> origin/master
 
 header {
-    position: fixed;
-    /*ligger fast på skærmen*/
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0) 70%);
-    /*W3C*/
-    width: 100vw;
+    /*    position: fixed;*/
+    width: 100%;
+    /*    height: 100vw;*/
     padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.logo {
+    flex-basis: 300px;
+    padding-left: 100px;
+    padding-top: 15px;
+}
+
+.logo img {
+    width: 100%;
 }
 
 header nav {
-    font-family: 'vollkorn', sans-serif;
-    text-align: left;
-    margin: 30vw 10vw 0 0;
+    font-family: 'Vollkorn', serif;
+    font-size: 1.8em;
+    padding-right: 10vw;
+    padding-top: 15px;
+    flex-basis: 300px;
 }
 
 header nav a {
     text-decoration: none;
     color: #7c1b1b;
-    padding-left: 6px;
+    padding-left: 18px;
     display: block;
-    width: 20%;
+    float: right;
+    display: inline-flex;
 }
 
 header nav a:hover {
     color: #c19a66;
 }
 
-
-/************* menu slut  *************/
-
-<<<<<<< HEAD
-@media screen and (min-width: 321px) and (max-width: 728px) and (orientation: landscape) {
-    #splash {
-        background-image: url(img/splash_tablet.jpg);
-        height: 79.6vw;
-    }
-    header nav a {
-        display: inline-block;
-    }
+.bg_image {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    height: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url(img/beans.png);
 }
 
-@media screen and (min-width: 729px) and (max-width: 1024px) and (orientation: landscape) {
-    #splash {
-        background-image: url(img/splash_desktop.jpg);
-        height: 79.6vw;
-    }
-}
-=======
+
+/**mobil størrelse**/
+
 @media screen and (max-width: 676px) {
     header nav a {
         display: block;
     }
 }
 
+
 /*************HEADER SLUT****************/
+
 
 /************FONT STYLE START***********/
 
-.column_text p {
-    font-family: 'Amiri',
-    serif;
+#index .column_text p {
+    font-family: 'Amiri', serif;
     font-size: 2em;
     font-weight: 800;
     color: black;
@@ -136,37 +134,76 @@ header nav a:hover {
     line-height: 0.99;
 }
 
-h3 {
-    font-family: 'Amiri',
-    serif;
+#index h3 {
+    font-family: 'Amiri', serif;
     font-size: 2.4em;
     font-weight: bolder;
     color: black;
     text-decoration: underline;
     color: #7c1b1b;
-
 }
 
-.content_mid p {
-    font-family: 'Amiri',
-    serif;
+#index .content_mid p {
+    font-family: 'Amiri', serif;
     font-size: 1.8em;
     font-weight: 800;
     color: black;
 }
 
-.text p {
-    font-family: 'Amiri',
-    serif;
-    font-size: 2.5em;
+#index .text p {
+    font-family: 'Amiri', serif;
+    font-size: 2em;
     font-weight: bolder;
     color: black;
     text-align: left;
     padding: 0 50px 0 50px;
 }
 
+#menu h2 {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+    font-size: 8em;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: -30px;
+}
+
+#menu h3 {
+    font-family: 'Indie Flower', cursive;
+    font-weight: bolder;
+    font-size: 4em;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#menu p {
+    font-family: 'Indie Flower', cursive;
+    font-size: 2.5em;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#menu {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.text p {
+    font-family: 'Amiri', serif;
+    font-size: 2em;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    padding: 0 50px 0 50px;
+    box-sizing: border-box;
+    word-break: break-all;
+}
+
+
 /************FONT STYLE SLUT***********/
 
+
+/*
 .sectionwrapper {
     flex-wrap: wrap;
     display: flex;
@@ -174,16 +211,29 @@ h3 {
     justify-content: space-between;
 
 }
+*/
+
+#ekstra body {
+    margin: 0;
+}
+
+#ekstra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
 
 /***********CONTENT TOP START*************/
 
-.content_top {
+#index .content_top {
     display: flex;
-    padding: 40px;
+    /*    padding: 40px;*/
     flex-wrap: wrap;
 }
 
-.column_img {
+#index .column_img {
     flex-grow: 1;
     flex-basis: 200px;
     padding: 40px;
@@ -191,25 +241,33 @@ h3 {
     width: 30%;
 }
 
-.column_text {
+#index img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#index .column_text {
     flex-grow: 2;
     flex-basis: 400px;
     padding: 40px;
     align-content: center;
 }
 
+
 /***********CONTENT TOP SLUT*************/
+
 
 /***********CONTENT MID START*************/
 
-.content_mid {
+#index .content_mid {
     flex-grow: 1;
     flex-basis: 400px;
     padding: 40px;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.column_add {
+#index .column_add {
     flex-grow: 2;
     flex-basis: 200px;
     padding: 40px;
@@ -217,32 +275,159 @@ h3 {
     /*width: 30%;*/
 }
 
-.column_open {
+#index .column_open {
     flex-grow: 2;
     flex-basis: 200px;
     padding: 40px;
     text-align: center;
     /*width: 30%;*/
 }
+
 
 /***********CONTENT MID SLUT*************/
 
+
 /***********CONTENT BOTTOM START*************/
 
+
+/*
 .content_bottom {
     flex-wrap: wrap;
     display: flex;
     width: 100%;
     margin: 0 auto;
 }
+*/
 
-.column_map {
-    margin: 0 auto;
+#index .map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+#index .map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 
-
 /***********CONTENT BOTTOM START*************/
+
+
+/***********MENU START*************/
+
+#menu .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+#menu .column {
+    flex-grow: 1;
+    flex-basis: 300px;
+    padding: 15px;
+}
+
+#menu .column_bottom {
+    align-self: flex-end;
+    background: url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
+    border-style: solid;
+    border-width: 30px;
+    border-image: url(img/21.jpg) 30 repeat;
+    padding: 10px 20px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+#menu .column_bottom img {
+    width: 40%;
+    float: center;
+    flex-basis: 200px;
+    flex-grow: 2;
+    margin: 0 0 10% 30%;
+}
+
+#menu .column_top {
+    background: url(https://raw.github.com/mmoustafa/Chalkboard/master/img/bg.png);
+    border-style: solid;
+    border-width: 30px;
+    border-image: url(img/21.jpg) 30 repeat;
+    padding: 10px 20px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+
+#menu .column_top img {
+    width: 40%;
+    float: center;
+    flex-basis: 200px;
+    flex-grow: 2;
+    margin: 0 0 10% 30%;
+}
+
+
+/***********MENU SLUT*************/
+
+
+/*************Video start****************/
+
+#ekstra h3 {
+    font-family: 'Amiri', serif;
+    font-weight: bolder;
+    font-size: 2em;
+    word-break: break-all;
+}
+
+#ekstra .text p {
+    font-family: 'Amiri', serif;
+    font-size: 2em;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    padding: 0 50px 0 50px;
+}
+
+#ekstra .column_top {
+    justify-content: center;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+#ekstra .column_top video {
+    width: 80vw!important;
+    height: 47vw!important;
+}
+
+
+/*************Video slut****************/
+
+
+/*************billeder start****************/
+
+#ekstra .img {
+    width: 40%;
+    margin: 5px;
+}
+
+#ekstra .column_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#ekstra .column_img {
+    padding-top: 80px;
+}
+
+
+/*************billeder slut****************/
+
 
 /***************FOOTER START**************/
 
@@ -262,8 +447,7 @@ h3 {
     background-repeat: no-repeat;
     /*background-size: contain;*/
     opacity: 0.8;
-
 }
 
+
 /****************FOOTER SLUT**************/
->>>>>>> origin/master
