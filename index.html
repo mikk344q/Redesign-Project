@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Rust&Kaffen</title>
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amiri|Vollkorn:600" rel="stylesheet">
@@ -32,7 +33,7 @@
 
     </header>
 
-    <div class="sectionwrapper">
+    <div id="index" class="sectionwrapper">
         <div class="content_top">
 
             <div class="column_text">
@@ -68,53 +69,17 @@
         </div>
 
         <div class="content_bottom">
-            <div class="column_map">
-                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIMOOODMbaHmDiCOkzGvESbfMNiC-QWU0'></script>
-                <div style='overflow:hidden;height:400px;width:505px;'>
-                    <div id='gmap_canvas' style='height:400px;width:505px;'></div>
-                    <style>
-                        #gmap_canvas img {
-                            max-width: none!important;
-                            background: none!important
-                        }
-
-                    </style>
-                </div> <a href='http://maps-generator.com/ro'>maps-generator.com</a>
-                <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=59a18be6a12ca8141f7b8468c78fc0e78b48e427'></script>
-                <script type='text/javascript'>
-                    function init_map() {
-                        var myOptions = {
-                            zoom: 12,
-                            center: new google.maps.LatLng(55.6584093, 12.608001800000011),
-                            mapTypeId: google.maps.MapTypeId.ROADMAP
-                        };
-                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                        marker = new google.maps.Marker({
-                            map: map,
-                            position: new google.maps.LatLng(55.6584093, 12.608001800000011)
-                        });
-                        infowindow = new google.maps.InfoWindow({
-                            content: '<strong>Rust&Kaffen</strong><br>Amagerbrogade 111<br>2300 kobenhavn s<br>'
-                        });
-                        google.maps.event.addListener(marker, 'click', function() {
-                            infowindow.open(map, marker);
-                        });
-                        infowindow.open(map, marker);
-                    }
-                    google.maps.event.addDomListener(window, 'load', init_map);
-
-                </script>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2250.76460883454!2d12.605634651354844!3d55.65830300664851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652534d02e5a805%3A0xffe6c3a9096e4660!2sAmagerbrogade+111%2C+2300+K%C3%B8benhavn+S!5e0!3m2!1sda!2sdk!4v1507891774154" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
 
         </div>
 
-        <div class="text">
-            <p><b>CVR-nr.: 32904564</b></p>
+    </div>
+    <div class="text">
+        <p><b>CVR-nr.: 32904564</b></p>
 
-            <p>Info@rustogkaffen.dk<br> +45 23 20 15 30</p>
-        </div>
-
-
+        <p>Info@rustogkaffen.dk<br> +45 23 20 15 30</p>
     </div>
 
     <footer>
