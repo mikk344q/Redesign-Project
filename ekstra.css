@@ -60,6 +60,16 @@ header nav a:hover {
 
 /*************HEADER SLUT****************/
 
+html {
+    background: url(img/steam.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+body {
+    margin: 0;
+}
+
 .sectionswrapper {
     background-color: ;
     display: flex;
@@ -68,6 +78,7 @@ header nav a:hover {
     align-content: flex-start;
 
 }
+
 
 /*************Video start****************/
 
@@ -125,23 +136,19 @@ h3 {
 
 .text {
     display: flex;
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    transform: translate(-50%);
+    margin: 0 auto;
 }
 
 
 
 .footer {
     width: 100%;
-    height: 350px;
-    padding: 1em;
+    height: 325px;
     display: flex;
     flex-wrap: wrap;
-    background-image: url(img/coffee-beans.jpg);
-    background-repeat: repeat;
-    background-size: contain;
+    background-image: url(img/footer.png);
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
     opacity: 0.8;
 
 }
