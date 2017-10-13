@@ -19,7 +19,14 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <header>
+=======
+    <header class="bg_image">
+        <div class="logo">
+            <img alt="logo" src="img/logo.png">
+        </div>
+>>>>>>> origin/master
         <nav>
             <a href="#splash">Forside</a>
             <a href="#forside.html">Om os</a>
@@ -28,15 +35,109 @@
         </nav>
     </header>
 
+<<<<<<< HEAD
     <section id="splash">
         <div class="logo">
             <img src="img/logo.png" alt="logo">
 
         </div>
+=======
+    <div class="sectionwrapper">
+        <div class="content_top">
+
+            <div class="column_text">
+                <p><span style="text-transform: capitalize; font-size: 4em">K</span>ære Nabo,</p>
+                <p>Velkommen til min kaffebar. Her hos mig er kaffeglæde og hygge i højsædet.</p>
+                <p>Lige inde for døren trækker vi tempoet ned og hyggen op.</p>
+                <p>Børn er meget velkomne, og er de helt små, har vi puslefaciliteter på vores toilet. Vi har masser af underholdning og plads til barnevognen.</p>
+                <p>Ovenpå i dagligstuen kan du sidde i bløde stole og nyde en Latte eller et lækkert stykke cheesecake imens byen pulserer forbi udenfor med en skøn udsigt over Amagerbrogade og Englandsvej.</p>
+                <p>Rust&Kaffen er det perfekte sted at holde uformelle møder, arbejde eller blot nyde de rare omgivelser.</p>
+                <p>Hvor om alting er, så glæder jeg mig til at se dig i min kaffebar!</p>
+                <p>/Tommy (Rust)
+                </p>
+            </div>
+            <div class="column_img">
+                <img src="img/rustkaffen.jpg" alt="tommy">
+            </div>
+        </div>
 
 
 
+        <div class="content_mid">
+            <div class="column_add">
+                <h3>Find Os</h3>
+                <p>Rust&Kaffen<br>Amagerbrogade 111,<br> 2300 København S<br>
+                </p>
+            </div>
+            <div class="column_open">
+                <h3>Åbningstider</h3>
+                <p>Mandag - Fredag: 9:00 – 18:00<br>Lørdag-Søndag: 10:00 – 17:00
+                </p>
+            </div>
+
+        </div>
+
+        <div class="content_bottom">
+            <div class="column_map">
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIMOOODMbaHmDiCOkzGvESbfMNiC-QWU0'></script>
+                <div style='overflow:hidden;height:400px;width:505px;'>
+                    <div id='gmap_canvas' style='height:400px;width:505px;'></div>
+                    <style>
+                        #gmap_canvas img {
+                            max-width: none!important;
+                            background: none!important
+                        }
+
+                    </style>
+                </div> <a href='http://maps-generator.com/ro'>maps-generator.com</a>
+                <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=59a18be6a12ca8141f7b8468c78fc0e78b48e427'></script>
+                <script type='text/javascript'>
+                    function init_map() {
+                        var myOptions = {
+                            zoom: 12,
+                            center: new google.maps.LatLng(55.6584093, 12.608001800000011),
+                            mapTypeId: google.maps.MapTypeId.ROADMAP
+                        };
+                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                        marker = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(55.6584093, 12.608001800000011)
+                        });
+                        infowindow = new google.maps.InfoWindow({
+                            content: '<strong>Rust&Kaffen</strong><br>Amagerbrogade 111<br>2300 kobenhavn s<br>'
+                        });
+                        google.maps.event.addListener(marker, 'click', function() {
+                            infowindow.open(map, marker);
+                        });
+                        infowindow.open(map, marker);
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);
+
+                </script>
+            </div>
+
+        </div>
+
+        <div class="text">
+            <p><b>CVR-nr.: 32904564</b></p>
+
+            <p>Info@rustogkaffen.dk<br> +45 23 20 15 30</p>
+        </div>
+
+
+    </div>
+>>>>>>> origin/master
+
+    <footer>
+        <div class="footer">
+        </div>
+    </footer>
+
+
+<<<<<<< HEAD
     </section>
+=======
+>>>>>>> origin/master
 
 
 </body>

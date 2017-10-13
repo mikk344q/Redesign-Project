@@ -60,6 +60,16 @@ header nav a:hover {
 
 /*************HEADER SLUT****************/
 
+html {
+    background: url(img/steam.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
+body {
+    margin: 0;
+}
+
 .sectionswrapper {
     background-color: ;
     display: flex;
@@ -69,14 +79,14 @@ header nav a:hover {
 
 }
 
+
 /*************Video start****************/
 
 h3 {
-    font-family: 'Vollkorn',
+    font-family: 'Amiri',
     serif;
-    ;
-    font-weight: 800;
-    font-size: 1.4em;
+    font-weight: bolder;
+    font-size: 2em;
 }
 
 .text p {
@@ -91,12 +101,13 @@ h3 {
 
 .column_top {
     justify-content: center;
+    padding-top: 80px;
 }
 
 
 .column_top video {
-    width: 80%!important;
-    height: 80%!important;
+    width: 80vw!important;
+    height: 47vw!important;
 }
 
 /*************Video slut****************/
@@ -125,23 +136,19 @@ h3 {
 
 .text {
     display: flex;
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    transform: translate(-50%);
+    margin: 0 auto;
 }
 
 
 
 .footer {
     width: 100%;
-    height: 350px;
-    padding: 1em;
+    height: 325px;
     display: flex;
     flex-wrap: wrap;
-    background-image: url(img/coffee-beans.jpg);
-    background-repeat: repeat;
-    background-size: contain;
+    background-image: url(img/footer.png);
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
     opacity: 0.8;
 
 }

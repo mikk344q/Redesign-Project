@@ -1,5 +1,9 @@
 /*************HEADER START****************/
 
+body {
+    margin: 0;
+}
+
 header {
     /*    position: fixed;*/
     width: 100%;
@@ -97,6 +101,12 @@ h3 {
 
 /************FONT STYLE SLUT***********/
 
+html {
+    background: url(img/steam.jpg) no-repeat center;
+    background-size: cover;
+
+}
+
 /************INDHOLD START***********/
 
 .sectionwrapper {
@@ -156,23 +166,20 @@ h3 {
 
 .text {
     display: flex;
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    transform: translate(-50%);
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 
 
 .footer {
     width: 100%;
-    height: 350px;
-    padding: 1em;
+    height: 325px;
     display: flex;
     flex-wrap: wrap;
-    background-image: url(img/coffee-beans.jpg);
-    background-repeat: repeat;
-    background-size: contain;
+    background-image: url(img/footer.png);
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
     opacity: 0.8;
 
 }
