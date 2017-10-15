@@ -6,36 +6,28 @@
 
 /*************FONTS START****************/
 
-
 /*MENU*/
-
 
 /*
 font-family: 'Indie Flower',
 cursive;
 */
 
-
 /*MENU-MINDRE SKRIFT*/
-
 
 /*
 font-family: 'Raleway',
 sans-serif;
 */
 
-
 /*NAV*/
-
 
 /*
 font-family: 'Vollkorn',
 serif;
 */
 
-
 /*BRODTEKST*/
-
 
 /*
 font-family: 'Amiri',
@@ -69,7 +61,7 @@ header {
 
 .logo {
     flex-basis: 300px;
-    padding-left: 100px;
+    /*    padding-left: 100px;*/
     padding-top: 15px;
 }
 
@@ -87,7 +79,7 @@ header nav {
 
 header nav a {
     text-decoration: none;
-    color: #7c1b1b;
+    color: floralwhite;
     padding-left: 18px;
     display: block;
     float: right;
@@ -104,9 +96,10 @@ header nav a:hover {
     width: 100%;
     height: contain;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    background-image: url(img/beans.png);
+    background-image: url(img/rust&kaffen.png);
+
 }
 
 
@@ -114,13 +107,19 @@ header nav a:hover {
 
 @media screen and (max-width: 676px) {
     header nav a {
-        display: block;
+        display: inline-block;
     }
 }
 
+/*
+@media screen and (min-width:376px) and (orientation:portrait) {
+        {
+        background-image: url(img/logo.png);
+        height: 133vw;
+    }
+*/
 
 /*************HEADER SLUT****************/
-
 
 /************FONT STYLE START***********/
 
@@ -202,7 +201,6 @@ header nav a:hover {
 
 /************FONT STYLE SLUT***********/
 
-
 /*
 .sectionwrapper {
     flex-wrap: wrap;
@@ -256,7 +254,6 @@ header nav a:hover {
 
 /***********CONTENT TOP SLUT*************/
 
-
 /***********CONTENT MID START*************/
 
 #index .content_mid {
@@ -286,9 +283,7 @@ header nav a:hover {
 
 /***********CONTENT MID SLUT*************/
 
-
 /***********CONTENT BOTTOM START*************/
-
 
 /*
 .content_bottom {
@@ -316,7 +311,6 @@ header nav a:hover {
 
 
 /***********CONTENT BOTTOM START*************/
-
 
 /***********MENU START*************/
 
@@ -373,7 +367,6 @@ header nav a:hover {
 
 /***********MENU SLUT*************/
 
-
 /*************Video start****************/
 
 #ekstra h3 {
@@ -406,7 +399,6 @@ header nav a:hover {
 
 /*************Video slut****************/
 
-
 /*************billeder start****************/
 
 #ekstra .img {
@@ -427,7 +419,6 @@ header nav a:hover {
 
 
 /*************billeder slut****************/
-
 
 /***************FOOTER START**************/
 
